@@ -1,4 +1,16 @@
+body{
+    background-image: url(kepek/background.jpg);
+    background-repeat: round;
+}
 .carousel-item img{
     height: 37rem;
 }
-    
+#h1carouserdiv{
+    border: solid 1px black;
+    border-top-right-radius: 45px;
+    margin-left: 0;
+    position: absolute;
+    top: 486px;
+    background-color: aliceblue;
+
+}
