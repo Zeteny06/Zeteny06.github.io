@@ -21,3 +21,9 @@ h5>a{
 h5>a:hover{
     color: green;
 }
+.row{
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
+    margin-right: 0;
+}
