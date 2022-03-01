@@ -2,6 +2,7 @@ body{
     background-image: url(kepek/background.jpg);
     background-repeat: round;
     scroll-behavior:smooth ;
+    background-attachment: fixed;
 }
 .carousel-item img{
     height: 37rem;
