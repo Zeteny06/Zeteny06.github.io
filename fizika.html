@@ -13,31 +13,31 @@
     <div class="container">
         <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
             <div class="container-fluid">
-              <a class="navbar-brand" href="#">Navbar</a>
+              <a class="navbar-brand" href="index.html">Home</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <a class="nav-link active" aria-current="page" href="matek.html">Matek</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
+                    <a class="nav-link" href="complex.html">Complex</a>
                   </li>
                   <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Dropdown
+                      Ugrás
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item" href="#surlodas">Súrlódás</a></li>
+                      <li><a class="dropdown-item" href="#lendulet">Lendület</a></li>
                       <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                      <li><a class="dropdown-item" href="#rugoerő">Rugóerő</a></li>
                     </ul>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link disabled">Disabled</a>
+                    <a class="nav-link disabled" id="#fizikafel"></a>
                   </li>
                 </ul>
                 <form class="d-flex">
@@ -48,7 +48,47 @@
             </div>
           </nav>
           <div class="row mt-5">
-            <div class="col-4">
+            <div class="col-12" id="#surlodas">
+              <h1 class="" style="color: white;">Súrlódás</h1>
+              <table class="table table-dark table-striped" style="color: aliceblue;">
+                <ul>
+                  <tr>
+                    <td>Csúszási súrlódási erő</td>
+                    <td>Tapadási(nyugvó) súrlódási erő</td>
+                    <td>Gördülési súrlódási erő</td>
+                  </tr>
+                  <tr>
+                    <td>Jele:Fs</td>
+                    <td>Jele:Ft</td>
+                    <td>Jele:Fg</td>
+                  </tr>
+                  <tr>
+                    <td>Akkor jön létre, ha az érintkező felületeknek egymáshoz képest sebessége van</td>
+                    <td>Akkor jön létre, ha az érintkező felületeknek egymáshoz képesti sebessége nincs</td>
+                    <td>Akkor jön létre, ha az érintkező felületek egymáson elgördülnek</td>
+                  </tr>
+                  <tr>
+                    <td>Iránya a vizsgáált test sebességével ellentétes</td>
+                    <td>Iránya a test megcsúszását létrehozni kívánó erővel ellentétes</td>
+                    <td>Iránya a vizsgált test sebességével ellentétes</td>
+                  </tr>
+                  <tr>
+                    <td>nagysága függ:
+                      <li>a felületeket összenyomó erőtől</li>
+                      <li>az érintkező felületek minőségétől</li>
+                    </td>
+                    <td>Nagysága 0-tól egy maximális értékig változik. <span> 0<Ft<=Ft max </span></td>
+                  </tr>
+                    <td></td>
+                    <td></td>
+                  <tr>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                </ul>
+              </table>
+            </div>
+            <div class="col-4" id="#lendulet">
               <div class="card" style="width: 18rem;">
                   <img src="..." class="card-img-top" alt="...">
                   <div class="card-body">
@@ -58,17 +98,7 @@
                   </div>
                 </div>
             </div>
-            <div class="col-4">
-              <div class="card" style="width: 18rem;">
-                  <img src="..." class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                  </div>
-                </div>
-            </div>
-            <div class="col-4">
+            <div class="col-4" id="Rugóerő">
               <div class="card" style="width: 18rem;">
                   <img src="..." class="card-img-top" alt="...">
                   <div class="card-body">
@@ -81,7 +111,7 @@
         </div>
         <nav class="navbar fixed-bottom bg-dark">
             <div class="container-fluid">
-              <a class="navbar-brand mx-auto" href="#">Fixed bottom</a>
+              <a class="navbar-brand mx-auto" href="#fizikafel">Vissza a tetejére</a>
             </div>
           </nav>
     </div>
