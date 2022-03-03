@@ -1,186 +1,184 @@
-<!DOCTYPE html>
-<html lang="hu">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tudás lexikon</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div class="container">
-      <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="index.html">Home</a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="matek.html"
-                  >Matek</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="complex.html">Complex</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  id="navbarDropdown"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Ugrás
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li>
-                    <a class="dropdown-item" href="#surlodas">Súrlódás</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="#lendulet">Lendület</a>
-                  </li>
-                  <li><hr class="dropdown-divider" /></li>
-                  <li><a class="dropdown-item" href="#rugoerő">Rugóerő</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" id="#fizikafel"></a>
-              </li>
-            </ul>
-            <form class="d-flex">
-              <input
-                class="form-control me-2"
-                type="search"
-                placeholder="Search"
-                aria-label="Search"
-              />
-              <button class="btn btn-outline-success" type="submit">
-                Search
-              </button>
-            </form>
+  <!DOCTYPE html>
+  <html lang="hu">
+    <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Tudás lexikon</title>
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+      />
+      <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+        crossorigin="anonymous"
+      />
+      <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+      <div class="container">
+        <p id="fel" style="display: unset;"></p>
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Home</a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="matek.html"
+                    >Matek</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="complex.html">Complex</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="navbarDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Ugrás
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li>
+                      <a class="dropdown-item" href="#surlodas">Súrlódás</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#lendulet">Lendület</a>
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li><a class="dropdown-item" href="#rugoerő">Rugóerő</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled" id="#fizikafel"></a>
+                </li>
+              </ul>
+              <form class="d-flex">
+                <input
+                  class="form-control me-2"
+                  type="search"
+                  placeholder="Search"
+                  aria-label="Search"
+                />
+                <button class="btn btn-outline-success" type="submit">
+                  Search
+                </button>
+              </form>
+            </div>
           </div>
-        </div>
-      </nav>
-      <div class="row mt-5">
-        <div class="col-12" id="surlodas">
-          <h1 class="" style="color: white">Súrlódás</h1>
-          <table
-            class="table table-dark table-striped"
-            style="color: aliceblue"
-          >
-            <ul>
-              <tr>
-                <td>Csúszási súrlódási erő</td>
-                <td>Tapadási(nyugvó) súrlódási erő</td>
-                <td>Gördülési súrlódási erő</td>
-              </tr>
-              <tr>
-                <td>Jele:Fs</td>
-                <td>Jele:Ft</td>
-                <td>Jele:Fg</td>
-              </tr>
-              <tr>
-                <td>
-                  Akkor jön létre, ha az érintkező felületeknek egymáshoz képest
-                  sebessége van
-                </td>
-                <td>
-                  Akkor jön létre, ha az érintkező felületeknek egymáshoz
-                  képesti sebessége nincs
-                </td>
-                <td>
-                  Akkor jön létre, ha az érintkező felületek egymáson
-                  elgördülnek
-                </td>
-              </tr>
-              <tr>
-                <td>Iránya a vizsgáált test sebességével ellentétes</td>
-                <td>
-                  Iránya a test megcsúszását létrehozni kívánó erővel ellentétes
-                </td>
-                <td>Iránya a vizsgált test sebességével ellentétes</td>
-              </tr>
-              <tr>
-                <td>
-                  nagysága függ: a felületeket összenyomó erőtől az érintkező
-                  felületek minőségétől
-                </td>
-                <td>
-                  Nagysága 0-tól egy maximális értékig változik.
-                  <span> 0&lt;Ft&lt;=Ft max </span>
-                </td>
-                <td>
-                  nagysága függ a felületeket összenyomó erőtől, az érintkező
-                  felületek minőségétől , a gördülő test sugarának nagyságától
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  Fny a felületeket összenyomó erő μ=0,2 például azt jelenti,
-                  hogy a vízszintes talajon nyugvó test eltolása állandó
-                  sebesség mellett a felemelési erőnek csak a 20%-a. Speciális
-                  anyagoknál μ>1 lehet
-                </td>
-                <td>
-                  mind a tapadási, mind a csúszási súrlódási erővel fékezni és
-                  gyorsítani egyaránt lehet
-                </td>
-                <td>
-                  g gördülési súrlódási tényező(annál kisebb,minél nagyobb a
-                  kerék sugara) megj:ugyanazon körülmények között μg &lt; μ 
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <img
-                    src="kepek/fizikaguilded1.png"
-                    alt="képlet"
-                    class="w-100"
-                  />
-                </td>
-                <td>
-                  <img
-                    src="kepek/guildedFIZIKA.png"
-                    alt="képlet"
-                    class="w-100"
-                  />
-                </td>
-                <td>
-                  <img src="kepek/guilded2.png" alt="képlet" class="w-100" />
-                </td>
-              </tr>
-            </ul>
-          </table>
-        </div>
+        </nav>
+        <div class="row mt-5">
+          <div class="col-12" id="surlodas">
+            <h1 class="" style="color: white">Súrlódás</h1>
+            <table class="table table-dark table-striped" style="color: aliceblue">
+              <li>
+                <tr>
+                  <td>Csúszási súrlódási erő</td>
+                  <td>Tapadási(nyugvó) súrlódási erő</td>
+                  <td>Gördülési súrlódási erő</td>
+                </tr>
+                <tr>
+                  <td>Jele:Fs</td>
+                  <td>Jele:Ft</td>
+                  <td>Jele:Fg</td>
+                </tr>
+                <tr>
+                  <td>
+                    Akkor jön létre, ha az érintkező felületeknek egymáshoz képest
+                    sebessége van
+                  </td>
+                  <td>
+                    Akkor jön létre, ha az érintkező felületeknek egymáshoz
+                    képesti sebessége nincs
+                  </td>
+                  <td>
+                    Akkor jön létre, ha az érintkező felületek egymáson
+                    elgördülnek
+                  </td>
+                </tr>
+                <tr>
+                  <td>Iránya a vizsgáált test sebességével ellentétes</td>
+                  <td>
+                    Iránya a test megcsúszását létrehozni kívánó erővel ellentétes
+                  </td>
+                  <td>Iránya a vizsgált test sebességével ellentétes</td>
+                </tr>
+                <tr>
+                  <td>
+                    nagysága függ: a felületeket összenyomó erőtől az érintkező
+                    felületek minőségétől
+                  </td>
+                  <td>
+                    Nagysága 0-tól egy maximális értékig változik.
+                    <span> 0&lt;Ft&lt;=Ft max </span>
+                  </td>
+                  <td>
+                    nagysága függ a felületeket összenyomó erőtől, az érintkező
+                    felületek minőségétől , a gördülő test sugarának nagyságától
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    Fny a felületeket összenyomó erő μ=0,2 például azt jelenti,
+                    hogy a vízszintes talajon nyugvó test eltolása állandó
+                    sebesség mellett a felemelési erőnek csak a 20%-a. Speciális
+                    anyagoknál μ>1 lehet
+                  </td>
+                  <td>
+                    mind a tapadási, mind a csúszási súrlódási erővel fékezni és
+                    gyorsítani egyaránt lehet
+                  </td>
+                  <td>
+                    g gördülési súrlódási tényező(annál kisebb,minél nagyobb a
+                    kerék sugara) megj:ugyanazon körülmények között μg &lt; μ
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <img
+                      src="kepek/fizikaguilded1.png"
+                      alt="képlet"
+                      class="w-100"
+                    />
+                  </td>
+                  <td>
+                    <img
+                      src="kepek/guildedFIZIKA.png"
+                      alt="képlet"
+                      class="w-100"
+                    />
+                  </td>
+                  <td>
+                    <img src="kepek/guilded2.png" alt="képlet" class="w-100" />
+                  </td>
+                </tr>
+              </li>
+              </table>
+          </div>
         </div>
         <div class="row mb-5">
           <div class="col-6" id="#lendulet">
-            <div class="card" style="">
-              <img src="kepek/lendület.png" class="card-img-top" alt="képlet" />
+            <div class="card" >
+              <img src="kepek/lendület.png" class="card-img-top border border-5 border-dark rounded" alt="képlet" />
               <div class="card-body">
-                <h5 class="card-title">Lendület</h5>
+                <h1 class="card-title">Lendület</h1>
                 <p class="card-text">
                   Testek tömegének és sebességének a szorzatát lendületnek vagy
                   impulzusnak nevezzük.
@@ -197,35 +195,39 @@
             </div>
           </div>
           <div class="col-6" id="Rugoerő">
-            <div class="card" style="">
-              <img src="kepek/rugo.png" class="card-img-top" style="height: 18rem;" alt="minden" />
+            <div class="card">
+              <img
+                src="kepek/rugo.png"
+                class="card-img-top border border-5 border-dark rounded"
+                style="height: 18rem"
+                alt="minden"
+              />
               <div class="card-body">
-                <h5 class="card-title">Rugóerő</h5>
+                <h1 class="card-title">Rugóerő</h1>
                 <p class="card-text">
-                  jele:D
-a rugó anyagára és méretére jellemző állandó
-A rugóállandó azt mutatja meg,hogy a vizsgált rugó 1m-nél való megnyújtásához mekkora erő lenne szükséges
+                  jele:D a rugó anyagára és méretére jellemző állandó A
+                  rugóállandó azt mutatja meg,hogy a vizsgált rugó 1m-nél való
+                  megnyújtásához mekkora erő lenne szükséges
                 </p>
               </div>
             </div>
           </div>
         </div>
-      <nav class="navbar fixed-bottom bg-dark">
-        <div class="container-fluid">
-          <a class="navbar-brand mx-auto" href="#fizikafel"
-            >Vissza a tetejére</a>
-        </div>
-      </nav>
-    </div>
-    <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
-      integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
-      integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
-      crossorigin="anonymous"
-    ></script>
-  </body>
-</html>
+        <nav class="navbar fixed-bottom bg-dark">
+          <div class="container-fluid">
+            <a class="navbar-brand mx-auto" href="#fel">Vissza a tetejére</a>
+          </div>
+        </nav>
+      </div>
+      <script
+        src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"
+      ></script>
+      <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"
+      ></script>
+    </body>
+  </html>

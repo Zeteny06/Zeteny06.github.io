@@ -11,33 +11,31 @@
 </head>
 <body>
     <div class="container">
+      <p id="fel" style="display: unset;"></p>
         <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
             <div class="container-fluid">
-              <a class="navbar-brand" href="#">Navbar</a>
+              <a class="navbar-brand" href="index.html">Home</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <a class="nav-link" href="fizika.html">Fizika</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
+                    <a class="nav-link" href="matek.html">Matek</a>
                   </li>
                   <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Dropdown
+                      Ugrás
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item" href="#biokémia">Biokémia</a></li>
+                      <li><a class="dropdown-item" href="#csontok">Csontok</a></li>
                       <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                      <li><a class="dropdown-item" href="#izmok">Izmok</a></li>
                     </ul>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link disabled">Disabled</a>
                   </li>
                 </ul>
                 <form class="d-flex">
@@ -47,20 +45,22 @@
               </div>
             </div>
           </nav>
-          <div class="row mt-5">
+          <div class="row mb-5">
             <div class="col-4">
-              <div class="card" style="width: 18rem;">
-                  <img src="..." class="card-img-top" alt="...">
+              <div class="card" id="biokémia">
+                  <img src="kepek/biokemia.jpg" class="card-img-top" alt="biokémia">
                   <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                    <h5 class="card-title">Biokémia</h5>
+                    <p class="card-text">Élő rendszert felépítő és az anyagcserében részt vevő elemek összessége</p>
+                    <p class="card-text">környezettel kapcsolatban van az élőlény, ezért biogén elemeit is a környezetből veszi</p>
+                    <p class="card-text">biogén elemek: C, H, O, N, P; belőlük van a legtöbb az élőlényben</p>
+                    <a style="text-decoration: none;" href="https://www.guilded.gg/Cigluk/groups/v3j1ReRz/channels/62c9b7f7-549d-4104-b3d1-c5425bb516c4/docs/304384" class="card-link">Bővebben alábbi linken</a>
                   </div>
                 </div>
             </div>
             <div class="col-4">
-              <div class="card" style="width: 18rem;">
-                  <img src="..." class="card-img-top" alt="...">
+              <div class="card" >
+                  <img src="kepek/GOLGI.PNG" class="card-img-top" alt="SEJT">
                   <div class="card-body">
                     <h5 class="card-title">Card title</h5>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -81,7 +81,7 @@
         </div>
         <nav class="navbar fixed-bottom bg-dark">
             <div class="container-fluid">
-              <a class="navbar-brand mx-auto" href="#">Fixed bottom</a>
+              <a class="navbar-brand mx-auto" href="#fel">Vissza a tetejére</a>
             </div>
           </nav>
     </div>

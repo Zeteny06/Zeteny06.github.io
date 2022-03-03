@@ -29,3 +29,6 @@ h5>a:hover{
     margin-left: 0;
     margin-right: 0;
 }
+a:hover{
+    color: red;
+}
